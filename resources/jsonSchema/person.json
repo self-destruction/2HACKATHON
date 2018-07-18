@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "name": "Person",
+  "properties" : {
+    "id": {
+      "type": "integer",
+      "minimum": -9223372036854775808,
+      "maximum": 9223372036854775807
+    },
+    "name": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "string",
+      "format": "date",
+      "minLength": 10,
+      "maxLength": 10
+    },
+  },
+  "required": ["id", "name", "birthdate"]
+}
+
+-9223372036854775807

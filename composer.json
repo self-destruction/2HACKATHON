@@ -1,0 +1,15 @@
+{
+	"name": "Team5",
+    "description": "Web service of Team5",
+    "require": {
+        "slim/slim": "3.9.2",
+        "slim/php-view": "2.2.0",
+		"doctrine/dbal": "2.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "App\\": "src/"
+        }
+    }
+}
